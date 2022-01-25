@@ -7,6 +7,7 @@ package view;
 
 import Model.LoginDAO;
 import Model.LoginModel;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -30,6 +31,7 @@ public class Register extends javax.swing.JFrame {
      */
     public Register() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/iconApp.png")));
         this.setLocationRelativeTo(null);
     }
     

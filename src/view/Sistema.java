@@ -30,6 +30,7 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.awt.Desktop;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -83,6 +84,7 @@ public class Sistema extends javax.swing.JFrame {
 
     public Sistema(LoginModel login) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/iconApp.png")));
         this.setLocationRelativeTo(null);
         txtIdCliente.setVisible(false);
         proDAO.ConsultarProveedor(cbxProveedorPro);
